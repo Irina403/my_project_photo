@@ -1,0 +1,760 @@
+        html {
+            overflow-x: hidden;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        .main {
+            background-image: url(../i/main-bg2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            &__title {
+                width: 50%;
+                padding-top: 13%;
+                @include bp($point_3) {
+                    width: 100%;
+                }
+            }
+            &__title p {
+                margin-top: 2.6rem;
+                font-family: $font_4;
+                font-size: 2.2rem;
+            }
+            &__row {
+                display: flex;
+            }
+            &__col-bg {
+                position: absolute;
+                right: 0;
+            }
+            // &__col-right {
+            //     position: absolute;
+            //     top: 0;
+            //     right: -5%;
+            //     @include bp($point_0) {
+            //         right: -16%;
+            //     }
+            // }
+            // &__col-right img {
+            //     width: 98.5%;
+            //     @include bp($point_0) {
+            //         width: 75.8%;
+            //     }
+            // }
+        }
+        
+        .advantages-main {
+            width: 48%;
+            @include bp($point_3) {
+                width: 100%;
+            }
+            &__bg {
+                margin-top: 13.2rem;
+                background-color: #EAE8E2;
+                padding: 3rem 4rem;
+                border-radius: 50px 50px 0px 0px;
+                @include bp($point_6) {
+                    padding: 2rem 2rem;
+                    margin-top: 3rem;
+                    border-radius: 30px 30px 0px 0px;
+                }
+            }
+            &__text {
+                font-size: 1.8rem;
+                color: #262626;
+                font-family: $font_2;
+            }
+            &__row {
+                padding-top: 5rem;
+                display: flex;
+                justify-content: space-between;
+                color: #596A73;
+                @include bp($point_6) {
+                    padding-top: 2rem;
+                    flex-direction: column;
+                }
+            }
+            &__col {
+                padding-bottom: 2rem;
+            }
+            &__blockTxt {
+                margin-top: 20px;
+                font-size: 1.8rem;
+                font-family: $font_3;
+            }
+        }
+        
+        span {
+            color: #596A73;
+        }
+        
+        .vertigoBlock {
+            position: relative;
+            background-image: url(../i/elipse-elem.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 140px;
+            @include bp($point_3) {
+                flex-wrap: wrap;
+            }
+            @include bp($point_6) {
+                padding-top: 30px;
+            }
+            &__text {
+                font-size: 1.8rem;
+                font-family: $font_2;
+            }
+            &__row {
+                margin-top: 57px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include bp($point_3) {
+                    margin-top: -100px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                @include bp($point_6) {
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                padding-top: 8%;
+                width: 40%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include bp($point_3) {
+                    margin-top: 150px;
+                    margin-left: 50px;
+                }
+                @include bp($point_6) {
+                    margin-left: 0px;
+                    width: 100%;
+                    padding-top: 20%;
+                }
+            }
+            &__item::after {
+                position: absolute;
+                top: 0;
+                content: '';
+                width: 338px;
+                height: 338px;
+                border-radius: 50%;
+                border: 1px solid #596A73;
+            }
+            &__item-text {
+                padding-top: 3rem;
+                width: 50%;
+                font-size: 1.8rem;
+                font-family: $font_2;
+                text-align: center;
+                @include bp($point_3) {
+                    width: 80%;
+                }
+            }
+            &__item2 {
+                padding: 6.1rem 3.9rem;
+                border: 1px solid #596A73;
+                border-radius: 20px;
+                width: 47%;
+                display: flex;
+                align-items: center;
+                @include bp($point_3) {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    justify-content: center;
+                }
+                @include bp($point_6) {
+                    flex-direction: column;
+                    padding: 2rem 2rem;
+                    align-items: center;
+                }
+            }
+            &__item2-text {
+                margin-left: 4.8rem;
+                font-size: 2rem;
+                font-family: $font_2;
+                @include bp($point_6) {
+                    margin-left: 0rem;
+                    text-align: center;
+                }
+            }
+            &__row2 {
+                margin-top: 200px;
+            }
+        }
+        
+        .decor-right {
+            position: relative;
+            &__img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+        
+        .decor-left {
+            position: relative;
+            &__img {
+                position: absolute;
+                top: -150px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+        
+        // .decor-right::after {
+        //     top: 0;
+        //     right: 0;
+        //     position: absolute;
+        //     content: url(../i/icons/decor-elem-right.png);
+        // }
+        .vertigoCause {
+            margin-top: 115px;
+            @include bp($point_6) {
+                margin-top: 15px;
+            }
+            &__col {
+                display: flex;
+                align-items: flex-start;
+                width: 45%;
+                @include bp($point_3) {
+                    width: 100%;
+                }
+                @include bp($point_6) {
+                    width: 100%;
+                    flex-direction: column;
+                }
+            }
+            &__title {
+                margin-left: 3.5rem;
+                @include bp($point_6) {
+                    margin-left: 0rem;
+                }
+                &2 {
+                    margin-top: 3.5rem;
+                }
+                p {
+                    margin-top: 1.5rem;
+                    font-size: 1.8rem;
+                    font-family: $font_4;
+                    line-height: 126.3%;
+                }
+            }
+            &__title-center {
+                margin: auto;
+                width: 38%;
+                font-family: $font_2;
+                @include bp($point_3) {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .boxDesck {
+            position: relative;
+            padding: 4rem 5rem;
+            background: rgba(199, 203, 196, 0.5);
+            border-radius: 40px;
+            margin-top: 4.5rem;
+            display: flex;
+            @include bp($point_6) {
+                padding: 2rem 0rem;
+                border-radius: 30px;
+            }
+            &__elem {
+                width: 43%;
+                @include bp($point_3) {
+                    width: 58%;
+                }
+                @include bp($point_6) {
+                    width: 100%;
+                    padding: 2rem 2rem;
+                    margin-top: 300px;
+                }
+            }
+            &__text {
+                font-size: 1.8rem;
+                font-family: $font_2;
+                margin-bottom: 3.4rem;
+                // z-index: 9;
+            }
+            &__text a {
+                color: #262626;
+                font-family: $font_3;
+            }
+            &__text2 {
+                margin-bottom: 0rem;
+            }
+            &__img {
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                @include bp($point_0) {
+                    right: -30px;
+                }
+                @include bp($point_6) {
+                    top: -3%;
+                    bottom: 200px;
+                }
+            }
+            &__img img {
+                width: 100%;
+                @include bp($point_0) {
+                    width: 80%;
+                }
+            }
+        }
+        
+        .offer {
+            position: relative;
+            margin-top: 75px;
+            @include bp($point_6) {
+                margin-top: 10px;
+            }
+            p {
+                margin: auto;
+                width: 30%;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2.2rem;
+                font-family: $font_3;
+                line-height: 126.3%;
+                @include bp($point_3) {
+                    width: 62%;
+                }
+                @include bp($point_6) {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .offer::after {
+            position: absolute;
+            top: -15px;
+            left: 30%;
+            content: url(../i/icons/decor-line1.svg);
+            @include bp($point_3) {
+                left: 12%;
+            }
+            @include bp($point_6) {
+                display: none;
+            }
+        }
+        
+        .offer::before {
+            position: absolute;
+            top: -15px;
+            right: 30%;
+            content: url(../i/icons/decor-line2.svg);
+            @include bp($point_3) {
+                right: 12%;
+            }
+            @include bp($point_6) {
+                display: none;
+            }
+        }
+        
+        .scheme {
+            margin-top: 100px;
+            @include bp($point_6) {
+                margin-top: 30px;
+            }
+            h3 {
+                text-align: center;
+                width: 34%;
+                margin: auto;
+                @include bp($point_3) {
+                    width: 60%;
+                }
+                @include bp($point_6) {
+                    width: 100%;
+                }
+            }
+            &__title {
+                margin-top: 60px;
+                margin-bottom: 34px;
+            }
+            &__row {
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_3) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            &__col {
+                width: 22%;
+                @include bp($point_3) {
+                    width: 50%;
+                }
+                @include bp($point_6) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            &__text {
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                font-family: $font_2;
+            }
+        }
+        
+        .downloadBlock {
+            margin-top: 15%;
+            &__bg {
+                padding: 3.3rem 3.7rem;
+                position: relative;
+                background: rgba(199, 203, 196, 0.5);
+                border-radius: 40px;
+            }
+            &__img {
+                bottom: 26px;
+                position: absolute;
+                @include bp($point_3) {
+                    bottom: 0;
+                    top: -30px;
+                }
+            }
+            &__img img {
+                width: 100%;
+                @include bp($point_0) {
+                    width: 90%;
+                }
+            }
+            &__row {
+                display: flex;
+            }
+            &__text {
+                margin-left: 50rem;
+                font-size: 1.8rem;
+                font-family: $font_2;
+                @include bp($point_3) {
+                    margin-top: 200px;
+                    margin-left: 0rem;
+                }
+            }
+            &__buttonBox {
+                margin-top: 55px;
+                margin-left: 50rem;
+                display: flex;
+                @include bp($point_3) {
+                    margin-left: 0rem;
+                }
+                @include bp($point_6) {
+                    margin-top: 20px;
+                    flex-direction: column;
+                }
+            }
+            &__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 225px;
+                height: 50px;
+                // padding: 13px 77px;
+                background-color: #C7CBC4;
+                border-radius: 10px;
+                margin-right: 55px;
+            }
+            &__btn-white {
+                background-color: #EAE8E2;
+                @include bp($point_6) {
+                    margin-top: 20px;
+                }
+            }
+            &__btn a {
+                color: #000000;
+                font-family: $font_2;
+            }
+        }
+        
+        .app {
+            margin-top: 94px;
+            @include bp($point_6) {
+                margin-top: 40px;
+            }
+            &__block {
+                padding: 28px 47px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                width: 45%;
+                background: rgba(254, 254, 254, 0.25);
+                border-radius: 40px;
+                @include bp($point_3) {
+                    width: 100%;
+                }
+                @include bp($point_6) {
+                    padding: 10px 5px;
+                }
+            }
+            &__title {
+                margin-top: 30px;
+            }
+            &__list {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &__list p {
+                margin-bottom: 10px;
+                text-align: center;
+                font-family: $font_2;
+                font-size: 1.8rem;
+            }
+            &__text::before {
+                margin: 30px auto;
+                // margin: auto;
+                display: block;
+                content: '';
+                width: 78px;
+                height: 3px;
+                background-color: #C7CBC4;
+            }
+            &__text {
+                text-align: center;
+                font-family: $font_2;
+                font-size: 1.8rem;
+            }
+        }
+        
+        .questions {
+            margin-top: 86px;
+            @include bp($point_6) {
+                margin-top: 20px;
+            }
+            &__block {
+                margin-top: 38px;
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_6) {
+                    flex-direction: column;
+                }
+            }
+            &__item {
+                padding: 25px 24px;
+                width: 30%;
+                background: rgba(199, 203, 196, 0.5);
+                border-radius: 20px;
+                font-family: $font_2;
+                @include bp($point_6) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+        .reviews {
+            margin-top: 60px;
+            @include bp($point_6) {
+                margin-top: 20px;
+            }
+            &__row {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_3) {
+                    flex-direction: column;
+                }
+            }
+            &__col {
+                width: 30%;
+                padding: 20px 24px;
+                height: 46rem;
+                background: rgba(254, 254, 254, 0.25);
+                border-radius: 20px;
+                @include bp($point_3) {
+                    width: 100%;
+                    height: 25rem;
+                    margin-bottom: 20px;
+                }
+                @include bp($point_6) {
+                    height: 100%;
+                }
+            }
+            &__name {
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                font-family: $font_1;
+            }
+            &__text {
+                margin-top: 10px;
+                font-family: $font_2;
+            }
+            &__box-button {
+                margin-top: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @include bp($point_6) {
+                    margin-top: 10px;
+                }
+            }
+            &__button {
+                width: 38rem;
+                height: 5.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #C7CBC4;
+                border-radius: 10px;
+                font-family: $font_2;
+                @include bp($point_6) {
+                    width: 100%;
+                }
+                a {
+                    color: #000;
+                }
+            }
+            &__button-border {
+                margin-top: 28px;
+                width: 38rem;
+                height: 5.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #000000;
+                border-radius: 10px;
+                font-family: $font_2;
+                @include bp($point_6) {
+                    width: 100%;
+                }
+                a {
+                    color: #000;
+                }
+            }
+        }
+        
+        .team {
+            margin-top: 70px;
+            &__text {
+                text-align: center;
+                font-family: $font_2;
+                font-size: 2.2rem;
+            }
+            &__title {
+                text-align: center;
+            }
+            &__row {
+                margin-top: 80px;
+                display: flex;
+                justify-content: space-between;
+                @include bp($point_6) {
+                    margin-top: 20px;
+                    flex-direction: column;
+                }
+            }
+            &__img {
+                margin-bottom: 25px;
+            }
+            &__img img {
+                @include bp($point_0) {
+                    width: 80%;
+                }
+            }
+            &__item {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @include bp($point_6) {
+                    margin-bottom: 20px;
+                }
+            }
+            &__profession {
+                font-family: $font_2;
+            }
+            &__more {
+                text-align: center;
+                margin-top: 83px;
+                font-size: 2.2rem;
+                font-family: $font_2;
+                @include bp($point_6) {
+                    margin-top: 10px;
+                }
+            }
+        }
+        
+        .partners {
+            margin-top: 70px;
+            &__title {
+                text-align: center;
+                margin-bottom: 80px;
+            }
+        }
+        
+        .slick-list {
+            width: 80% !important;
+            margin: auto !important;
+        }
+        
+        .arrow-black {
+            cursor: pointer;
+            position: absolute;
+            top: 35%;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .popup-fade {
+            display: none;
+        }
+        
+        .popup-open:hover {
+            text-decoration: underline;
+        }
+        
+        .popup-fade:before {
+            content: '';
+            background: #000;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            z-index: 9999;
+        }
+        
+        .popup {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            padding: 30px 20px;
+            width: 360px;
+            transform: translate(-50%, 0%);
+            // margin-left: -200px;
+            background: #fff;
+            border-radius: 4px;
+            z-index: 99999;
+            opacity: 1;
+            @include bp($point_6) {
+                width: 320px;
+            }
+        }
+        
+        .popup p {
+            font-size: 1.8rem;
+            font-family: $font_2;
+            line-height: 150%;
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
