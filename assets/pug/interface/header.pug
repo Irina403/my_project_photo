@@ -2,7 +2,10 @@ header
 	.navbar.fixed-top
 		.section_in
 			.navbar-container.container
+				.navbar__logo 
+					img(src="../i/icons/logo.svg", alt="")
 				input(type="checkbox" name="" id="")
+				
 				.hamburger-lines
 					span.line.line1
 					span.line.line2
@@ -10,12 +13,17 @@ header
 				
 				ul.menu-items.menu-toggle-open
 					li.navItem
-						a(href="#cause") Причины
+						a(href="#cause") Каталог
 					li.navItem
-						a(href="#offer") Решения
+						a(href="#offer") Услуги
 					li.navItem
-						a(href="#reviews") Мнение экспертов
+						a(href="#reviews") О компании
 					li.navItem
-						a(href="#team") Наша команда
-					li.navItem
-						a(href="#contacts") Контакты
+						a(href="#team") Контакты
+
+				.navbar__tel-container
+					.navbar__tel 8 (925) 000-62-12
+					.navbar__tel 8 (495) 580-50-80
+					.navbar__tel.navbar__mail mramorov.ru@gmail.com
+					
+
